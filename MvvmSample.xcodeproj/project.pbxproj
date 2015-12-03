@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		DBFC1F771C0DCBDF00D0642B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC1F761C0DCBDF00D0642B /* AppDelegate.swift */; };
-		DBFC1F791C0DCBDF00D0642B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC1F781C0DCBDF00D0642B /* ViewController.swift */; };
 		DBFC1F7C1C0DCBDF00D0642B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFC1F7A1C0DCBDF00D0642B /* Main.storyboard */; };
 		DBFC1F7E1C0DCBDF00D0642B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFC1F7D1C0DCBDF00D0642B /* Assets.xcassets */; };
 		DBFC1F811C0DCBDF00D0642B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFC1F7F1C0DCBDF00D0642B /* LaunchScreen.storyboard */; };
 		DBFC1F8C1C0DCBDF00D0642B /* MvvmSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC1F8B1C0DCBDF00D0642B /* MvvmSampleTests.swift */; };
 		DBFC1F971C0DCBE000D0642B /* MvvmSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC1F961C0DCBE000D0642B /* MvvmSampleUITests.swift */; };
+		DBFC1FA51C0DCECB00D0642B /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFC1FA41C0DCECB00D0642B /* Bond.framework */; };
+		DBFC1FA61C0DCECB00D0642B /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBFC1FA41C0DCECB00D0642B /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBFC1FE71C10626300D0642B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC1FE61C10626300D0642B /* HomeViewController.swift */; };
+		DBFC1FE91C10627B00D0642B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC1FE81C10627B00D0642B /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +36,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DBFC1FA71C0DCECB00D0642B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DBFC1FA61C0DCECB00D0642B /* Bond.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DBFC1F731C0DCBDF00D0642B /* MvvmSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MvvmSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFC1F761C0DCBDF00D0642B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBFC1F781C0DCBDF00D0642B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBFC1F7B1C0DCBDF00D0642B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBFC1F7D1C0DCBDF00D0642B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBFC1F801C0DCBDF00D0642B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +63,9 @@
 		DBFC1F921C0DCBDF00D0642B /* MvvmSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MvvmSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFC1F961C0DCBE000D0642B /* MvvmSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvvmSampleUITests.swift; sourceTree = "<group>"; };
 		DBFC1F981C0DCBE000D0642B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFC1FA41C0DCECB00D0642B /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
+		DBFC1FE61C10626300D0642B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DBFC1FE81C10627B00D0642B /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFC1FA51C0DCECB00D0642B /* Bond.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +97,7 @@
 		DBFC1F6A1C0DCBDF00D0642B = {
 			isa = PBXGroup;
 			children = (
+				DBFC1FA41C0DCECB00D0642B /* Bond.framework */,
 				DBFC1F751C0DCBDF00D0642B /* MvvmSample */,
 				DBFC1F8A1C0DCBDF00D0642B /* MvvmSampleTests */,
 				DBFC1F951C0DCBE000D0642B /* MvvmSampleUITests */,
@@ -97,8 +118,11 @@
 		DBFC1F751C0DCBDF00D0642B /* MvvmSample */ = {
 			isa = PBXGroup;
 			children = (
+				DBFC1FE51C10624500D0642B /* ViewController */,
+				DBFC1FE41C1061D000D0642B /* Model */,
+				DBFC1FE31C1061C700D0642B /* View */,
+				DBFC1FE21C1061BC00D0642B /* ViewModel */,
 				DBFC1F761C0DCBDF00D0642B /* AppDelegate.swift */,
-				DBFC1F781C0DCBDF00D0642B /* ViewController.swift */,
 				DBFC1F7A1C0DCBDF00D0642B /* Main.storyboard */,
 				DBFC1F7D1C0DCBDF00D0642B /* Assets.xcassets */,
 				DBFC1F7F1C0DCBDF00D0642B /* LaunchScreen.storyboard */,
@@ -125,6 +149,36 @@
 			path = MvvmSampleUITests;
 			sourceTree = "<group>";
 		};
+		DBFC1FE21C1061BC00D0642B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBFC1FE81C10627B00D0642B /* HomeViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBFC1FE31C1061C700D0642B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DBFC1FE41C1061D000D0642B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DBFC1FE51C10624500D0642B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBFC1FE61C10626300D0642B /* HomeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +189,7 @@
 				DBFC1F6F1C0DCBDF00D0642B /* Sources */,
 				DBFC1F701C0DCBDF00D0642B /* Frameworks */,
 				DBFC1F711C0DCBDF00D0642B /* Resources */,
+				DBFC1FA71C0DCECB00D0642B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,8 +311,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBFC1F791C0DCBDF00D0642B /* ViewController.swift in Sources */,
 				DBFC1F771C0DCBDF00D0642B /* AppDelegate.swift in Sources */,
+				DBFC1FE71C10626300D0642B /* HomeViewController.swift in Sources */,
+				DBFC1FE91C10627B00D0642B /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MvvmSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.jumbo.MvvmSample;
@@ -410,6 +470,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MvvmSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.jumbo.MvvmSample;
@@ -484,6 +548,7 @@
 				DBFC1F9D1C0DCBE000D0642B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBFC1F9E1C0DCBE000D0642B /* Build configuration list for PBXNativeTarget "MvvmSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +557,7 @@
 				DBFC1FA01C0DCBE000D0642B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBFC1FA11C0DCBE000D0642B /* Build configuration list for PBXNativeTarget "MvvmSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +566,7 @@
 				DBFC1FA31C0DCBE000D0642B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

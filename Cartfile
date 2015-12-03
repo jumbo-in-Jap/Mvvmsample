@@ -1,0 +1,2 @@
+github "SwiftBond/Bond" ~> 4.0
+github "Alamofire/Alamofire" ~> 3.0
